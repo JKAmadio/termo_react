@@ -1,10 +1,13 @@
-import "./App.css";
-import React from "react";
+import React from "react"
 
 function App() {
+  const numberOfLetters = [1, 2, 3, 4, 5];
+
   return (
-    <div className="text-red-300 font-bold">
-      Hello Tailwind
+    <div>
+      {numberOfLetters.map((letter,index) => {
+        return <div key={index}>{letter}</div>
+      })}
     </div>
   );
 }
