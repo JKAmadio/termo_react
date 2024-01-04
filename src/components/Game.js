@@ -1,13 +1,9 @@
-import React, { useState } from 'react';
-import Tile from './Tile';
+import React from 'react';
+import Tiles from './Tiles';
 
 function Game() {
-  const [ isActive, setIsActive ] = useState(false);
-
   return (
-    <Tile
-      isActive={isActive}
-      buttonClicked={() => setIsActive(!isActive)}
+    <Tiles
     />
   )
 }
